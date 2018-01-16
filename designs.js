@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function(){
 const colorValue = document.getElementById("colorPicker");
 
 // Select size input
-const nameValue = document.getElementById('sizePicker');
+const gridSizeForm = document.getElementById('sizePicker');
 const canvasSize = document.querySelector('#pixel_canvas');
 
 // When size is submitted by the user, call makeGrid()
 
-nameValue.addEventListener('submit',function(evt){
+gridSizeForm.addEventListener('submit',function(evt){
   evt.preventDefault();
   document.querySelector('table').remove();
   let canvasHeight = document.getElementById('input_height').value;
