@@ -22,10 +22,10 @@ nameValue.addEventListener('submit',function(evt){
      document.body.append(myTable);
 
     for(let r=1;r<=parseInt(canvasHeight);r++){
-     let trCanvas = document.createElement('tr');
+     const trCanvas = document.createElement('tr');
       myTable.append(trCanvas);
       for(let d=1;d<=parseInt(canvasWidth);d++){
-     let tdCanvas = document.createElement('td');
+     const tdCanvas = document.createElement('td');
       trCanvas.append(tdCanvas);
       }
     }
@@ -43,7 +43,5 @@ nameValue.addEventListener('submit',function(evt){
 
   makeGrid(canvasHeight,canvasWidth);
 });
-
-
 
 });// End of  loading DOM
